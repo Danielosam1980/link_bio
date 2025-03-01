@@ -1,0 +1,34 @@
+GIT
+===
+
+git config --global user.name "Daniel Llanos"
+git config --global user.email dferrerllc@outlook.com
+
+--configurar editor de texto vscode por defecto
+git config --global core.editor "code --wait"
+git config --global -e
+
+--agregar o eliminar CR a los archivos subidos
+git config --global core.autocrlf true
+
+--resumen
+git config -h
+
+--listar archivos
+ls
+--saber la ruta donde estamos
+pwd
+--moverse dentro de las carpetas
+--para ingresar a carpeta
+cd nombrecarpeta
+--para salir un nivel
+cd ..
+
+--para inicializar un proyecto ubicarse en la carpeta y ejecutar esto va a crear una carpeta .git
+git init
+
+--luego para abrir la carpeta del proyecto ubicarse en la ruta y ejecutar
+code .
+--verificar el estado
+git status
+
