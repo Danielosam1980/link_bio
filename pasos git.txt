@@ -31,9 +31,54 @@ git init
 code .
 --verificar el estado
 git status
---agregar los archivo rojos a
+--agregar los archivo rojos a, si es mas de un archivo se separa por espacios
 git add nombrearchivo.extension
 --una vez cargado y validado se ejecuta
 git commit -m "Indicar la indicacion del commit, en este caso le puse Commit inicial"
+
+--eliminar archivos
+rm nombrearchivo.extension
+git status
+git add nombrearchivo.extension
+git status
+git commit -m "eliminando archivo.extension"
+
+--para renombrar un archivo
+git mv nombrearchivo.extension nuevonombre.extension
+
+--ignorar archivos para que no sean considerados
+escribirlos en el archivo .gitignore
+
+--ver los cambios en los archivos modificados
+git diff
+--ver los cambios en la etapa de stage
+git diff --staged
+
+--revisar historial de todo el repositorio
+git log
+
+--ramas para desarrollar separados 
+--para ver en que rama se esta trabajando
+git branch
+--para crear una nueva rama, se recomienda dar varios codigos segun los desarrolladores
+git checkout -b nombreocodigodelarama
+--para ver el historial 
+git log --oneline
+--para ver el contenido del archivo
+cat nombredearchivo.extension
+--para volver al principal
+git checkout main
+--si vemos el contenido del archivo que tiene otra rama se ve como es cuando se creo la rama
+cat nombredearchivo.extension
+
+--traernos los cambios de la ramab a main (debemos estas en main)
+git merge ramab
+--luego se verifica el archivo
+cat nombredearchivo.extension
+
+
+
+
+
 
 
