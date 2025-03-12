@@ -31,4 +31,9 @@ git init
 code .
 --verificar el estado
 git status
+--agregar los archivo rojos a
+git add nombrearchivo.extension
+--una vez cargado y validado se ejecuta
+git commit -m "Indicar la indicacion del commit, en este caso le puse Commit inicial"
+
 
